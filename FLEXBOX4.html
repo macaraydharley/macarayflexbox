@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX4</title>
+    
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    height: calc(100vh - 8px);
+    gap: 4px;
+}
+
+nav, main, aside, footer {
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.navleft {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.navright {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.redbox {
+    background: red;
+    height: 30px;
+    width: 30px;
+}
+
+.redrectangle {
+    background: blue;
+    height: 25px;
+    width: 60px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 4px;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 4px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.outer-box {
+            width: 30%;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .text-above {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .inner-box {
+            height: 100%;
+            border: 1px solid black;
+        }
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+}
+
+.asidebox {
+    display: flex;
+    border: 1px solid black;
+    width: 15vw;
+    height: 5vh;
+}
+
+.smallboxes {
+    border: 1px solid black;
+    height: 90px;
+    width: 90px;
+}
+
+.bigbox {
+    border: 1px solid black;
+    height: 180px;
+    width: 230px;
+}
+
+footer {
+    padding: 4px;
+    gap: 4px;
+}
+
+.footertop{
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.footerbot {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.redboxes {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+.smallbox {
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+
+.hr {
+    padding: 4px;
+}
+</style>
+<body>
+    <nav>
+        <div class="navleft">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="navright">
+            <div class="redrectangle"></div>
+            <div class="redrectangle"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <main>
+            <div class="outer-box">
+                <div class="text-above">Main box 1</div>
+                <div class="inner-box"></div>
+            </div>
+            <div class="outer-box">
+                <div class="text-above">Main box 1</div>
+                <div class="inner-box"></div>
+            </div>
+           
+          </main>
+        <aside>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+            <div class="asidebox"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footertop">
+            <div class="redbox"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="footerbot">
+            <div class="redboxes">
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+                <div class="smallbox"></div>
+            </div>
+            <div class="text">
+                <p>@Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
